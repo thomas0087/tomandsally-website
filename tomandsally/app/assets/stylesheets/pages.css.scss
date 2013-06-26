@@ -11,11 +11,18 @@ header.band {
 
 body {
     background-image:url(/background.jpg);
-    z-index:60;
-    text-color: #DCD1B5;
+    z-index:10;
+    color: #DCD1B5;
 }
 
-#bg1, #bg2, #bg3 {
+div.champagne {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 960px;
+}
+
+#sal, #tom, #bg3, #scrolldown {
   background-image:url(/sal.png);
   background-position:center;
   background-repeat:no-repeat;
@@ -27,12 +34,11 @@ body {
   width:100%;
   z-index:50;
 }
-#bg2 {
+#tom {
   background-image:url(/tom.png);
   left:50%;
   z-index:49;
 }
-
 #bg3 {
   background-image:url(/ampersand.png);
   display: block;
@@ -40,29 +46,32 @@ body {
   margin-right: auto;
   z-index:51;
 }
+#scrolldown {
+  background-image:url(/scroll.png);
+  top:0px;
+  height:41px;
+  z-index:52;
 
-@media only screen and (min-width: 767px) {
-    body {
-        font-size: 1.125em; /* 18px / 16px */
-        line-height: 1.7em;
-    }
-    header.band {
-        background-image:url(/background.jpg);
-        background-size: cover;
-    }
-    header.band h1 {
-        font-size: 3.25em; /*52 / 16*/
-    }
-    div.titlename {
-        height: 200px;
-        background-repeat:no-repeat;
-        background-position:center;
-        background-size:contain;
-    }
-    div.tom {
-        background-image:url(/tom.png);
-            }
-    div.sal {
-        background-image:url(/sal.png);
-    }
+}
+
+#bottle {
+  background-image:url(/bottle.png);
+  background-position:center top;
+  background-repeat:no-repeat;
+  background-size:contain;
+  position:absolute;
+  height:5390px;
+  width:100%;
+  z-index:40;
+}
+
+#bubbles {
+  background-image:url(/bubbles.png);
+  background-position:center top;
+  background-repeat:no-repeat;
+  background-size:contain;
+  position:absolute;
+  height:3180px;
+  width:100%;
+  z-index:39;
 }
