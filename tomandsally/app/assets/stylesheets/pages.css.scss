@@ -6,12 +6,12 @@ header.band {
     background: #4b371f;
     color: white;
     text-align: center;
-    padding: 10% 0 15% 0;
+    padding: 10% 0 10% 0;
 }
 
 body {
-    background-image:url(/background.jpg);
-    z-index:10;
+    background-image:url(/background.png);
+    z-index:99;
     color: #DCD1B5;
 }
 
@@ -22,7 +22,7 @@ div.champagne {
     width: 960px;
 }
 
-#sal, #tom, #bg3, #scrolldown {
+#sal, #tom, #bg3 {
   background-image:url(/sal.png);
   background-position:center;
   background-repeat:no-repeat;
@@ -47,11 +47,7 @@ div.champagne {
   z-index:51;
 }
 #scrolldown {
-  background-image:url(/scroll.png);
-  top:0px;
-  height:41px;
-  z-index:52;
-
+  text-align:center;
 }
 
 #bottle {
@@ -74,4 +70,46 @@ div.champagne {
   height:3180px;
   width:100%;
   z-index:39;
+}
+
+div.comment {
+  background: #000000;
+  position:absolute;
+  left:50%;
+  z-index:99;
+}
+
+// height = 1666+77(year-1987)
+
+#comment1 {
+  margin-left:-245px;
+  top:1666px;
+}
+#comment2 {
+  margin-left:-345px;
+  top:1974px;
+}
+#comment3 {
+  margin-left:-435px;
+  top:2346px;
+}
+#comment4 {
+  margin-left:-460px;
+  top:2423px;
+}
+#comment5 {
+  margin-left:-555px;
+  top:3129px;
+}
+#comment6 {
+  margin-left:-538px;
+  top:3206px;
+}
+#comment7 {
+  margin-left:-535px;
+  top:2346px;
+}
+#comment8 {
+  margin-left:-535px;
+  top:2346px;
 }
