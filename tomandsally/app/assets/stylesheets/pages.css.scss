@@ -72,44 +72,16 @@ div.champagne {
   z-index:39;
 }
 
+// Give this a better background
 div.comment {
   background: #000000;
   position:absolute;
   left:50%;
+  width:300px;
   z-index:99;
 }
 
-// height = 1666+77(year-1987)
+div.left-comment {
+  text-align:right;
+}
 
-#comment1 {
-  margin-left:-245px;
-  top:1666px;
-}
-#comment2 {
-  margin-left:-345px;
-  top:1974px;
-}
-#comment3 {
-  margin-left:-435px;
-  top:2346px;
-}
-#comment4 {
-  margin-left:-460px;
-  top:2423px;
-}
-#comment5 {
-  margin-left:-555px;
-  top:3129px;
-}
-#comment6 {
-  margin-left:-538px;
-  top:3206px;
-}
-#comment7 {
-  margin-left:-535px;
-  top:2346px;
-}
-#comment8 {
-  margin-left:-535px;
-  top:2346px;
-}
