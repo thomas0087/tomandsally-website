@@ -10,7 +10,8 @@ header.band {
 }
 
 body {
-    background-image:url(/background.png);
+    background:#1D1E2B;
+    //background-image:url(/background.png);
     z-index:99;
     color: #DCD1B5;
 }
@@ -46,8 +47,16 @@ div.champagne {
   margin-right: auto;
   z-index:51;
 }
-#scrolldown {
-  text-align:center;
+div.scrolldown {
+  position:absolute;
+  position:absolute;
+  left:50%;
+  width:300px;
+  margin-left:-150px;
+  z-index:99;
+  font-size:25px;
+  line-height:30px;
+  margin-bottom:10px;
 }
 
 #bottle {
@@ -85,3 +94,22 @@ div.left-comment {
   text-align:right;
 }
 
+div.label {
+  color: #000000;
+  font-size:xx-large;
+  position:absolute;
+  left:50%;
+  width:660px;
+  margin-left:-330px;
+  top:3050px;
+  z-index:99;
+}
+
+.round {
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+  border:1px solid #DCD1B5;
+  padding-right:5px;
+  padding-left:5px;
+}
