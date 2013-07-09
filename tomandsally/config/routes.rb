@@ -1,5 +1,11 @@
 Tomandsally::Application.routes.draw do
+  resources :rsvps
+
   root :to => 'pages#home'
+  match 'accomodation' => 'pages#accom'
+  match 'registry' => 'pages#registry'
+  match 'photos' => 'pages#photos'
+  match 'where' => 'pages#where'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
