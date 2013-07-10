@@ -3,7 +3,7 @@ class PagesController < ApplicationController
   def home
   end
 
-  def accon
+  def accom
   end
 
   def registry

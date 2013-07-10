@@ -113,3 +113,69 @@ div.label {
   padding-right:5px;
   padding-left:5px;
 }
+
+div.navbutton {
+  position:absolute;
+  left:50%;
+  width:200px;
+  z-index:99;
+  text-align:center;
+  background-color:transparent;
+  -moz-border-radius:15px;
+  -webkit-border-radius:15px;
+  border-radius:15px;
+  border:2px solid #DFB449;
+  display:inline-block;
+  color:#DCD1B5;
+  font-family:arial;
+  font-size:24px;
+  font-weight:bold;
+  padding:16px 35px;
+  text-decoration:none;
+  
+  a {
+    color:#DCD1B5;
+  }
+  a:visited {
+    color:#DCD1B5;
+  }
+}.navbutton:active {
+  
+}
+
+a.navbutton {
+  text-align:center;
+  background-color:transparent;
+  -moz-border-radius:15px;
+  -webkit-border-radius:15px;
+  border-radius:15px;
+  border:2px solid #DFB449;
+  color:#DCD1B5;
+  font-family:arial;
+  font-size:24px;
+  font-weight:bold;
+  padding:16px 35px;
+  text-decoration:none;
+}
+
+h1.beige {
+  color:#DCD1B5;
+}
+
+div.centered {
+  width:400px;
+  margin-left: auto ;
+  margin-right: auto ;
+  text-align:center;
+  background-color:transparent;
+  -moz-border-radius:15px;
+  -webkit-border-radius:15px;
+  border-radius:15px;
+  border:2px solid #DFB449;
+  color:#DCD1B5;
+  font-family:arial;
+  font-size:24px;
+  font-weight:bold;
+  padding:16px 35px;
+  text-decoration:none;
+}

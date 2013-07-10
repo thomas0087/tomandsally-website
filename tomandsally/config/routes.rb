@@ -2,7 +2,7 @@ Tomandsally::Application.routes.draw do
   resources :rsvps
 
   root :to => 'pages#home'
-  match 'accomodation' => 'pages#accom'
+  match 'accom' => 'pages#accom'
   match 'registry' => 'pages#registry'
   match 'photos' => 'pages#photos'
   match 'where' => 'pages#where'
