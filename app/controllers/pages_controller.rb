@@ -1,17 +1,19 @@
 class PagesController < ApplicationController
-
   def home
   end
 
-  def accom
+  def where
   end
 
   def registry
   end
 
-  def photos
+  def contact
   end
 
-  def where
+  def us
+  end
+
+  def accom
   end
 end

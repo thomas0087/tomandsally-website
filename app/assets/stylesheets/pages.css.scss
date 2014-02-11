@@ -1,181 +1,20 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
-header.band {
-    background: #4b371f;
-    color: white;
-    text-align: center;
-    padding: 10% 0 10% 0;
+div.navbar-header {
+  margin-left: 10px;
+  margin-right: 0px;
 }
 
-body {
-    background:#1D1E2B;
-    //background-image:url(/background.png);
-    z-index:99;
-    color: #DCD1B5;
+a#down-btn {
+  margin-left: 200px;
 }
 
-div.champagne {
-    margin: 0 auto;
-    padding: 0;
-    position: relative;
-    width: 960px;
+/*
+@media (max-width: 767px) {
+    .intro {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
 }
-
-#sal, #tom, #bg3 {
-  background-image:url(/sal.png);
-  background-position:center;
-  background-repeat:no-repeat;
-  background-size:contain;
-  position:absolute;
-  height:200px;
-  left:0;
-  top:250px;
-  width:100%;
-  z-index:50;
-}
-#tom {
-  background-image:url(/tom.png);
-  left:50%;
-  z-index:49;
-}
-#bg3 {
-  background-image:url(/ampersand.png);
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  z-index:51;
-}
-div.scrolldown {
-  position:absolute;
-  position:absolute;
-  left:50%;
-  width:300px;
-  margin-left:-150px;
-  z-index:99;
-  font-size:25px;
-  line-height:30px;
-  margin-bottom:10px;
-}
-
-#bottle {
-  background-image:url(/bottle.png);
-  background-position:center top;
-  background-repeat:no-repeat;
-  background-size:contain;
-  position:absolute;
-  height:5390px;
-  width:100%;
-  z-index:40;
-}
-
-#bubbles {
-  background-image:url(/bubbles.png);
-  background-position:center top;
-  background-repeat:no-repeat;
-  background-size:contain;
-  position:absolute;
-  height:3180px;
-  width:100%;
-  z-index:39;
-}
-
-// Give this a better background
-div.comment {
-  //background: #000000;
-  position:absolute;
-  left:50%;
-  width:300px;
-  z-index:99;
-}
-
-div.left-comment {
-  text-align:right;
-}
-
-div.label {
-  color: #000000;
-  font-size:xx-large;
-  position:absolute;
-  left:50%;
-  width:660px;
-  margin-left:-330px;
-  top:3050px;
-  z-index:99;
-}
-
-.round {
-  -moz-border-radius:    10px;
-  -webkit-border-radius: 10px;
-  border-radius:         10px;
-  border:1px solid #DCD1B5;
-  padding-right:5px;
-  padding-left:5px;
-}
-
-div.navbutton {
-  position:absolute;
-  left:50%;
-  width:200px;
-  z-index:99;
-  text-align:center;
-  background-color:transparent;
-  -moz-border-radius:15px;
-  -webkit-border-radius:15px;
-  border-radius:15px;
-  border:2px solid #DFB449;
-  display:inline-block;
-  color:#DCD1B5;
-  font-family:arial;
-  font-size:24px;
-  font-weight:bold;
-  padding:16px 35px;
-  text-decoration:none;
-  
-  a {
-    color:#DCD1B5;
-  }
-  a:visited {
-    color:#DCD1B5;
-  }
-}.navbutton:active {
-  
-}
-
-a.navbutton {
-  text-align:center;
-  background-color:transparent;
-  -moz-border-radius:15px;
-  -webkit-border-radius:15px;
-  border-radius:15px;
-  border:2px solid #DFB449;
-  color:#DCD1B5;
-  font-family:arial;
-  font-size:24px;
-  font-weight:bold;
-  padding:16px 35px;
-  text-decoration:none;
-}
-
-h1.beige {
-  color:#DCD1B5;
-}
-
-div.centered {
-  width:400px;
-  margin-left: auto ;
-  margin-right: auto ;
-  text-align:center;
-  background-color:transparent;
-  -moz-border-radius:15px;
-  -webkit-border-radius:15px;
-  border-radius:15px;
-  border:2px solid #DFB449;
-  color:#DCD1B5;
-  font-family:arial;
-  font-size:24px;
-  font-weight:bold;
-  padding:16px 35px;
-  text-decoration:none;
-}
+*/

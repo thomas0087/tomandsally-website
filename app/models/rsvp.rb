@@ -1,3 +1,3 @@
 class Rsvp < ActiveRecord::Base
-  attr_accessible :name
+  attr_accessible :code, :comments, :responded
 end

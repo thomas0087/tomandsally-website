@@ -1,65 +1,126 @@
-<div id="background"></div>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<div class="champagne">
-    <div id="bottle"></div>
-    <div id="bubbles" data-1500="top:0px" data-3000="top:2200px" class="skrollable skrollable-between"></div>
-
-    <div id="sal" data-0="background-position:0px 0px;" data-800="background-position:600px 0px;" class="skrollable skrollable-between"></div>
-    <div id="tom" data-0="background-position:-100px 0px;" data-800="background-position:-500px 0px;" class="skrollable skrollable-between"></div>
-    <div id="bg3" data-0="opacity: 1;" data-800="opacity: 0.2;" class="skrollable skrollable-between"></div>
-    <div class="band main">
-
-    </div>
+    <!-- Bootstrap Core CSS -->
     
-</div>
-<div class="scrolldown"><center>⇓ Scroll down ⇓</center></div>
-<div style="margin-left:-280px; top:550px;" class="navbutton round"><%= link_to 'RSVP to the party', new_rsvp_url %></div>
-<div style="margin-left:80px; top:550px;" class="navbutton round"><%= link_to 'Checkout accomodation', accom_url %></div>
-<div style="margin-left:-400px; top:650px;" class="navbutton round"><%= link_to 'View some photos', photos_url %></div>
-<div style="margin-left:200px; top:650px;" class="navbutton round"><%= link_to 'Where is the party?', where_url %></div>
-<!--<div style="margin-left:-280px; top:700px;" class="navbutton round"><%= link_to 'Registry', registry_url %></div>-->
+    <!-- Fonts -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
-<div style="margin-left:-424px;   top:1416px;" class="comment round left-comment">Tom is born in sleepy Forster, NSW - '87</div>
-<div style="margin-left:-424px;   top:1460px;" class="comment round left-comment">Tom gets his first taste of the ocean - '87</div>
-<div style="margin-left:-424px;   top:1525px;" class="comment round left-comment">Tom leaves the coast and lands in the Blue Mountains - '91</div>
-<div style="margin-left:-424px;   top:1589px;" class="comment round left-comment">Tom is forced to learn to share - '92</div>
-<div style="margin-left:-424px;   top:1718px;" class="comment round left-comment">Tom's family relocates to the USA for a year, Tom gets fat - '97</div>
-<div style="margin-left:-424px;   top:1783px;" class="comment round left-comment">Tom decides computers are pretty neat - '00</div>
-<div style="margin-left:-454px;   top:1903px;" class="comment round left-comment">Tom decides girls are pretty neat - '02</div>
-<div style="margin-left:-470px;   top:2041px;" class="comment round left-comment">Tom moves back to the coast albeit to attend university - '06</div>
-<div style="margin-left:-500px;   top:2170px;" class="comment round left-comment">Tom struggles with dining hall 'food' - '06</div>
-<div style="margin-left:-500px;   top:2317px;" class="comment round left-comment">Tom, as an O-Week leader, reads Sally's Goldstein application and decides 'this blue-haired girl could be trouble, best if I avoid her' - '07</div>
-<div style="margin-left:-470px;   top:2468px;" class="comment round left-comment">Tom fails to heed his own advice - '07</div>
-<div style="margin-left:-450px;   top:2554px;" class="comment round left-comment">Tom falls for Sally - '07</div>
-<div style="margin-left:-450px;   top:2654px;" class="comment round left-comment">Tom takes Sally to a family holiday, all goes well - '08</div>
-<div style="margin-left:-420px;   top:2739px;" class="comment round left-comment">Tom convinces Sally to trek the Himalayas to climb Everest, Tom loves the mountains, Sally less so -'10</div>
-<div style="margin-left:-390px;   top:2825px;" class="comment round left-comment">Tom and Sally buy a car together and call him Max - '11</div>
-<div style="margin-left:-350px;   top:2911px;" class="comment round left-comment">Tom uses all his courage and proposes to Sally on the cliffs of Maroubra - '13</div>
+</head>
 
-<div style="margin-left:130px;   top:1410px;" class="comment round">'87 - Sally is born in the Cowra local hospital</div>
-<div style="margin-left:130px;   top:1440px;" class="comment round">'87 - Sally moves to Chapelton, Eugowra where she makes a fairly unenthusiastic dairy farmers daughter!</div>
-<div style="margin-left:130px;   top:1589px;" class="comment round">'93 - Sally starts school at Eugowra Public and begins what is many years of drama (the onstage variety - her natural penchant for drama began long before now!)</div>
-<div style="margin-left:140px;   top:1727px;" class="comment round">'02 - Sally is sent, dragging her feet, to boarding school at Kinross Wolaroi, complains....loudly</div>
-<div style="margin-left:150px;   top:1812px;" class="comment round">'03 - Sally's whole family relocates to Orange and take up residence on top of the hill</div>
-<div style="margin-left:150px;   top:1877px;" class="comment round">'05 - After lots of tears, late nights and a small chocolate addiction Sally makes it through Year 12</div>
-<div style="margin-left:180px;   top:2006px;" class="comment round">'06 - Sally moves to Larkhall, Scotland, then Sheffield, UK and then everywhere and anywhere for a year. We will spare you the details!</div>
-<div style="margin-left:210px;   top:2134px;" class="comment round">'07 - Sally begins a Bachelors of Commerce at UNSW. More importantly Sally moves into Goldstein College!</div>
-<div style="margin-left:210px;   top:2317px;" class="comment round">'07 - Sally meets a boy named Thomas, Sally thinks he is a bit of a knob (Thomas can't remember meeting her at all!)</div>
-<div style="margin-left:180px;   top:2468px;" class="comment round">'07 - Dramatic about face, Sally and Tom start to hang out, Thomas brings her a flower (a bird of paradise that he pulled from the flower bed out the front of college but I still accepted it)</div>
-<div style="margin-left:150px;   top:2598px;" class="comment round">'08 - Thomas meets the family...</div>
-<div style="margin-left:130px;   top:2665px;" class="comment round">'09 - Sally moves to Coogee where she pretends to live but isn't there that often as you have to walk past Thomas's house to get there</div>
-<div style="margin-left:100px;   top:2739px;" class="comment round">'11 - Thomas moves into Sally's place in Maroubra</div>
-<div style="margin-left:70px;   top:2809px;" class="comment round">'12 - Sally and Thomas get there own place! Admittedly we haven't progressed very far geographically in the last 5 years but this was momentous!</div>
-<div style="margin-left:50px;   top:2931px;" class="comment round">'13 - Pre-marital bliss ensues!</div>
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">
+                    Tom <span class="light">and</span> Sally
+                </a>
+            </div>
 
-<div class="label"><center>
-        <h1>Please join Sally and Tom to celebrate their engagement.</h1>
-        <br>
-        <h2>We are having a party at Tom's parent's house in Blackheath on Saturday September 7.</h2>
-        <h2>Festivities will begin around 5pm and continue on until late.</h2>
-        <br>
-        <h3>Dress cocktail but remember Blackheath can get cold in September so wear something to keep you warm.</h3>
-        <br><br><br>
-        <div class="navbutton round" style='background-color:#4b371f;margin-left:-130px;'><b><%= link_to 'RSVP Here', new_rsvp_url %></b></div>
-</center></div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About Us</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#location">Location</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#registry">Registry</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#rsvp">RSVP</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <section class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Tom & Sal</h1>
+                        <p class="intro-text">We are getting married on May 31 2014 in the idylic Blue Mountains 2 hours west of Sydney.</p>
+                        <div class="page-scroll">
+                            <a id="down-btn" href="#about" class="btn btn-circle">
+                                <i class="fa fa-angle-double-down animated"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About Tom & Sal</h2>
+                <p>We can probably have a little bit of propaganda over here. Lets make it a little hyperbolic <a href="http://snazzymaps.com/">Linky link</a>.</p>
+                <p>We are pretty awesome to be honest, so awesome in fact that it flows on to our bridal party who are equally awesome.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="location" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Location</h2>
+                    <p>The wedding will be held at Allview Escape, Blackheath in the Blue Mountains. There will be a bus picking up and dropping off from various local locations so you don't have to drive!</p>
+                    <a href="https://maps.google.com.au/maps?f=q&source=s_q&hl=en&geocode=&q=Allview+Escape,+Hat+Hill+Road,+Blackheath,+New+South+Wales&aq=0&oq=all+view&sll=-33.796923,150.922433&sspn=1.698098,2.90863&vpsrc=0&ie=UTF8&hq=+loc:+&hnear=&t=h&cid=4804486921835835226&ll=-33.6178,150.32022&spn=0.006647,0.011362&z=17&iwloc=A" class="btn btn-default btn-lg">View a map</a>
+                    <a href="#" class="btn btn-default btn-lg">See accomodation</a>
+                    <br><br><br>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="registry" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Our Wedding Registry</h2>
+                <p>We have not yet decided on a registry so this section is still essentially empty. When it is filled it will have a <a href="http://www.testaddress.com/">link</a> to our registry.</p>
+                <a href="#" class="btn btn-default btn-lg" style="margin-bottom: 1em;">See the registry</a>
+                <p>What would be awesome is if we could get a house before the wedding and so could be filling our new house. This is unlikely.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="rsvp" class="content-section text-center">
+        <div class="rsvp-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>RSVP</h2>
+                    <p>To RSVP please enter the code from your invite below or just scan the QR code from your invite.</p>
+                    <%= form_tag("/rsvp", method: "get") do %>
+                        <%= text_field_tag :code, "" , class: "txt-glow", placeholder: "Code" %>
+                        <%= submit_tag "Enter", class: "btn btn-invert" %>
+                    <% end %>
+                    <br>
+                    <p>Alternatively you can call or SMS Sal on 0422 257 630.</p>
+                    <br><br><br><br>
+                </div>
+            </div>
+        </div>
+    </section>
