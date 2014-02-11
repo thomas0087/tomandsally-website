@@ -12,5 +12,5 @@
 
 class Invitee < ActiveRecord::Base
   belongs_to :rsvp
-  attr_accessible :comming, :name
+  attr_accessible :comming, :name, :id, :rsvp_id
 end

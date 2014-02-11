@@ -1,4 +1,8 @@
 Tomandsally::Application.routes.draw do
+  match "rsvp" => "rsvps#edit"
+  put "rsvps/update"
+  match "secret" => "rsvps#index"
+
   get "pages/home"
 
   get "pages/where"

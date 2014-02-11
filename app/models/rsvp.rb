@@ -11,7 +11,10 @@
 #
 
 class Rsvp < ActiveRecord::Base
-  has_many :invitee, dependent: :destroy
   attr_accessible :code, :comments, :responded
   attr_accessible :invitee_attributes
+
+  has_many :invitee, dependent: :destroy
+
+  accepts_nested_attributes_for :invitee
 end
