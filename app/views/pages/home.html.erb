@@ -76,8 +76,15 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>About Tom & Sal</h2>
-                <p>We can probably have a little bit of propaganda over here. Lets make it a little hyperbolic <a href="http://snazzymaps.com/">Linky link</a>.</p>
-                <p>We are pretty awesome to be honest, so awesome in fact that it flows on to our bridal party who are equally awesome.</p>
+<p>So Tom and Sal... well probably the first and most telling thing that you should know about us is though Tom made this website he just typed <em>'Sally - blah blah put stuff about us here blah blah'</em> in this section and left it for me! This is how our partnership works in most all things, one of us starts and the other finishes it.</p>
+
+<p>Tom cooks, I eat.
+Tom cleans (cause he is a little OCD) and I mess it back up (cause if I am truely honest I'm a bit of a destructive whirlwind at times).
+Tom plays cricket, I pick him up from the pub at 3am.</p>
+
+<p>These are just the small things, but they make us happy! We are really greatful that we have had the past 6 years to get to know each other and for all of the amazing memories that we have made together. We are excited for the opportunity to bring together all of our family and friends to celebrate the next stage in our relationship and form our own official team.</p>
+<br>
+<i><p></p></i>
             </div>
         </div>
     </section>
@@ -87,9 +94,9 @@
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Location</h2>
-                    <p>The wedding will be held at Allview Escape, Blackheath in the Blue Mountains. There will be a bus picking up and dropping off from various local locations so you don't have to drive!</p>
-                    <a href="https://maps.google.com.au/maps?f=q&source=s_q&hl=en&geocode=&q=Allview+Escape,+Hat+Hill+Road,+Blackheath,+New+South+Wales&aq=0&oq=all+view&sll=-33.796923,150.922433&sspn=1.698098,2.90863&vpsrc=0&ie=UTF8&hq=+loc:+&hnear=&t=h&cid=4804486921835835226&ll=-33.6178,150.32022&spn=0.006647,0.011362&z=17&iwloc=A" class="btn btn-default btn-lg">View a map</a>
-                    <a href="#" class="btn btn-default btn-lg">See accomodation</a>
+                    <p>The wedding will be held at Allview Escape, Blackheath in the Blue Mountains. There will be a bus picking up and dropping off from central Blackheath locations (noted on the map below) so you don't have to drive!</p>
+                    <a href="https://mapsengine.google.com/map/edit?mid=zu28mHnHU7-4.k8jl3WNPTaAI" class="btn btn-default btn-lg">View a map</a>
+                    <%= link_to "See accomodation", pages_where_url, class: "btn btn-default btn-lg" %>
                     <br><br><br>
                 </div>
             </div>
@@ -100,9 +107,9 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Our Wedding Registry</h2>
-                <p>We have not yet decided on a registry so this section is still essentially empty. When it is filled it will have a <a href="http://www.testaddress.com/">link</a> to our registry.</p>
-                <a href="#" class="btn btn-default btn-lg" style="margin-bottom: 1em;">See the registry</a>
-                <p>What would be awesome is if we could get a house before the wedding and so could be filling our new house. This is unlikely.</p>
+                <p>Your love, laughter, and company on our wedding day are the best gifts we could ever hope to receive!</p>
+                <p>However, should you wish to honour us with a present we have made a small registry and will have a wishing well at the reception where we can receive your best wishes.</p> 
+                <a href="http://www.myer.com.au/webapp/wcs/stores/servlet/RegistryDetailsView?storeId=10251&catalogId=10051&langId=-1&externalId=410542" class="btn btn-default btn-lg" style="margin-bottom: 1em;">See the registry</a>
             </div>
         </div>
     </section>
@@ -114,7 +121,7 @@
                     <h2>RSVP</h2>
                     <p>To RSVP please enter the code from your invite below or just scan the QR code from your invite.</p>
                     <%= form_tag("/rsvp", method: "get") do %>
-                        <%= text_field_tag :code, "" , class: "txt-glow", placeholder: "Code" %>
+                        <%= text_field_tag :q, "" , class: "txt-glow", placeholder: "Code" %>
                         <%= submit_tag "Enter", class: "btn btn-invert" %>
                     <% end %>
                     <br>
