@@ -10,6 +10,22 @@ a#down-btn {
   margin-left: 200px;
 }
 
+.where {
+  background: url(../downloads-bg.jpg) no-repeat center center fixed; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+
+  a {
+    color: #ddd;
+  }
+  a:hover,
+  a:focus {
+    text-decoration: none;
+    color: #ff0;
+  }
+}
+
 /*
 @media (max-width: 767px) {
     .intro {
