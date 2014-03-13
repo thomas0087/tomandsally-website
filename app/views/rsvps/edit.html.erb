@@ -1,19 +1,29 @@
 <h1>RSVP</h1>
 <p>Please RSVP here for Tom and Sal's wedding</p>
 <br>
-<%= nested_form_for @rsvp, url: {action: :update}, html: {class: "form"} do |f| %>
-  <%= f.hidden_field :id %>
-  Which invitees will be comming?
-  <div>
-  <%= f.fields_for :invitee, :wrapper => false do |i_f| %>
-      <%= i_f.hidden_field :id %>
-      <%= i_f.check_box :comming, {} %>
-      <%= i_f.label :comming, i_f.object.name %><br>
+<% unless @rsvp.blank? %>
+  <%= nested_form_for @rsvp, url: {action: :update}, html: {class: "form"} do |f| %>
+    <%= f.hidden_field :id %>
+    Which invitees will be comming?
+    <div>
+      <%= f.fields_for :invitee, :wrapper => false do |i_f| %>
+        <%= i_f.hidden_field :id %>
+        <%= i_f.check_box :comming, {} %>
+        <%= i_f.label :comming, i_f.object.name %><br>
+      <% end %>
+    </div>
+    <br>
+    <p><%= f.text_field :comments %></p>
+    <br>
+    <%= f.submit class: "btn btn-default btn-lg" %>
   <% end %>
-  </div>
+<% else %>
+  <p>Whoops, it seems that you mistyped your password. Check your invitation again just to be sure.</p>
+  <%= form_tag("/rsvp", method: "get") do %>
+    <%= text_field_tag :q, "" , class: "txt-glow", placeholder: "Code" %>
+    <%= submit_tag "Enter", class: "btn btn-invert" %>
+  <% end %>
   <br>
-  <p><%= f.text_field :comments %></p>
-  <br>
-  <%= f.submit class: "btn btn-default btn-lg" %>
+  <p>Alternatively you can call or SMS Sal on 0422 257 630.</p>
 <% end %>
 <br><br>
