@@ -33,6 +33,7 @@
 {
     cursor: pointer;
     margin-bottom: 0px;
+    font-size: 24px;
 }
 
 :root .css3-radios input[type="radio"],
@@ -66,12 +67,14 @@
 :root .css3-radios input[type="radio"] + span::before,
 :root .css3-checkboxes input[type="checkbox"] + span::before
 {
-    content: "";
-    width: 12px;
-    height: 12px;
+    content: "Decline";
+    font-size: 16px;
+    color: #444;
+    width: 68px;
+    height: 26px;
     margin: 0 4px 0 0;
     border: solid 1px #a8a8a8;
-    line-height: 14px;
+    line-height: 28px;
     text-align: center;
     
     -moz-border-radius: 100%;
@@ -89,7 +92,7 @@
 :root .css3-radios input[type="radio"]:checked + span::before,
 :root .css3-checkboxes input[type="checkbox"]:checked + span::before
 {
-    color: #000;
+    color: #444;
 }
 
 :root .css3-radios input[type="radio"]:disabled + span,
@@ -117,8 +120,9 @@
 
 :root .css3-checkboxes input[type="checkbox"]:checked + span::before
 {
-    content: "\2714";
-    font-size: 12px;
+    //content: "\2714";
+    content: "Accept";
+    font-size: 16px;
 }
 
 /* Fieldset stuff */
@@ -140,5 +144,67 @@ fieldset.child {
 div.rsvp_index {
   color: #222;
   background-color: #AA6;
+}
+
+h2.regular-case {
+  text-transform: none;
+}
+
+div.centered {
+  width: 50%;
+  margin: 0 auto;
+}
+
+label.large-text {
+  margin-bottom: 10px;
+}
+
+ .txtarea-glow  { 
+padding: 0 10px; 
+border: none; 
+background: #F7DEF7; 
+background: rgba(255, 255, 255, 0.5); 
+box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.5); 
+font-family: 'Montserrat', sans-serif; 
+color: #000; 
+text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); 
+font-size: 20px; 
+outline: solid 1px #FF0;
+margin-top: 10px;
+} 
+ 
+ .txtarea-glow:focus { 
+box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 0 3px rgba(255, 255, 255, 0.15); 
+outline: none; 
+background: #F7DEF7; 
+background: rgba(255, 255, 255, 0.7); 
+outline: solid 1px #FF0;
+} 
+
+#rsvp-update {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../where.jpg) no-repeat bottom center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+   // color: white;
+   // text-shadow:
+   // -1px -1px 0 #000,
+   // 1px -1px 0 #000,
+   // -1px 1px 0 #000,
+   // 1px 1px 0 #000;
+   
+   //color: rgba(0,0,0,0.6);
+   //text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+
+   //text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
 }
 
