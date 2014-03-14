@@ -1,133 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <!-- Bootstrap Core CSS -->
-    
+
     <!-- Fonts -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
-</head>
+  </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+  <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="#page-top">
-                    Tom <span class="light">and</span> Sally
-                </a>
-            </div>
+    <div class="container">
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+          <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand" href="#page-top">
+          Tom <span class="light">and</span> Sally
+        </a>
+      </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">About Us</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#location">Location</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#registry">Registry</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#rsvp">RSVP</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+        <ul class="nav navbar-nav">
+          <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+          <li class="hidden">
+          <a href="#page-top"></a>
+          </li>
+          <li class="page-scroll">
+          <a href="#about">About Us</a>
+          </li>
+          <li class="page-scroll">
+          <a href="#location">Location</a>
+          </li>
+          <li class="page-scroll">
+          <a href="#registry">Registry</a>
+          </li>
+          <li class="page-scroll">
+          <a href="#rsvp">RSVP</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
     </nav>
 
     <section class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Tom & Sal</h1>
-                        <p class="intro-text">We are getting married on May 31 2014 in the idylic Blue Mountains 2 hours west of Sydney.</p>
-                        <div class="page-scroll">
-                            <a id="down-btn" href="#about" class="btn btn-circle">
-                                <i class="fa fa-angle-double-down animated"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+    <div class="intro-body">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+          <%= @notice %>
+            <% if @notice.blank? %>
+              <h1 class="brand-heading">Tom & Sal</h1>
+              <p class="intro-text">We are getting married on May 31 2014 in the idylic Blue Mountains 2 hours west of Sydney.</p>
+            <% else %>
+              <h1 class="brand-heading">Thank You!</h1>
+              <p class="intro-text">Thanks for letting us know if you're coming. Remember to checkout below for accommodation details.</p>
+            <% end %>
+            <div class="page-scroll">
+              <a id="down-btn" href="#about" class="btn btn-circle">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
             </div>
+          </div>
         </div>
+      </div>
+    </div>
     </section>
 
     <section id="about" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Tom & Sal</h2>
-<p>So Tom and Sal... well probably the first and most telling thing that you should know about us is though Tom made this website he just typed <em>'Sally - blah blah put stuff about us here blah blah'</em> in this section and left it for me! This is how our partnership works in most all things, one of us starts and the other finishes it.</p>
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <h2>About Tom & Sal</h2>
+        <p>So Tom and Sal... well probably the first and most telling thing that you should know about us is though Tom made this website he just typed <em>'Sally - blah blah put stuff about us here blah blah'</em> in this section and left it for me! This is how our partnership works in most all things, one of us starts and the other finishes it.</p>
 
-<p>Tom cooks, I eat.
-Tom cleans (cause he is a little OCD) and I mess it back up (cause if I am truely honest I'm a bit of a destructive whirlwind at times).
-Tom plays cricket, I pick him up from the pub at 3am.</p>
+        <p>Tom cooks, I eat.
+        Tom cleans (cause he is a little OCD) and I mess it back up (cause if I am truely honest I'm a bit of a destructive whirlwind at times).
+        Tom plays cricket, I pick him up from the pub at 3am.</p>
 
-<p>These are just the small things, but they make us happy! We are really greatful that we have had the past 6 years to get to know each other and for all of the amazing memories that we have made together. We are excited for the opportunity to bring together all of our family and friends to celebrate the next stage in our relationship and form our own official team.</p>
-<br>
-<i><p></p></i>
-            </div>
-        </div>
+        <p>These are just the small things, but they make us happy! We are really greatful that we have had the past 6 years to get to know each other and for all of the amazing memories that we have made together. We are excited for the opportunity to bring together all of our family and friends to celebrate the next stage in our relationship and form our own official team.</p>
+        <br>
+        <i><p></p></i>
+      </div>
+    </div>
     </section>
 
     <section id="location" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Location</h2>
-                    <p>The wedding will be held at Allview Escape, Blackheath in the Blue Mountains. There will be a bus picking up and dropping off from central Blackheath locations (noted on the map below) so you don't have to drive!</p>
-                    <a href="https://mapsengine.google.com/map/edit?mid=zu28mHnHU7-4.k8jl3WNPTaAI" class="btn btn-default btn-lg">View a map</a>
-                    <%= link_to "See accomodation", pages_where_url, class: "btn btn-default btn-lg" %>
-                    <br><br><br>
-                </div>
-            </div>
+    <div class="download-section">
+      <div class="container">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h2>Location</h2>
+          <p>The wedding will be held at Allview Escape, Blackheath in the Blue Mountains. There will be a bus picking up and dropping off from central Blackheath locations (noted on the map below) so you don't have to drive!</p>
+          <a href="https://mapsengine.google.com/map/edit?mid=zu28mHnHU7-4.k8jl3WNPTaAI" class="btn btn-default btn-lg">View a map</a>
+          <%= link_to "See accomodation", pages_where_url, class: "btn btn-default btn-lg" %>
+          <br><br><br>
         </div>
+      </div>
+    </div>
     </section>
 
     <section id="registry" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Our Wedding Registry</h2>
-                <p>Your love, laughter, and company on our wedding day are the best gifts we could ever hope to receive!</p>
-                <p>However, should you wish to honour us with a present we have made a small registry and will have a wishing well at the reception where we can receive your best wishes.</p> 
-                <a href="http://www.myer.com.au/webapp/wcs/stores/servlet/RegistryDetailsView?storeId=10251&catalogId=10051&langId=-1&externalId=410542" class="btn btn-default btn-lg" style="margin-bottom: 1em;">See the registry</a>
-            </div>
-        </div>
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <h2>Our Wedding Registry</h2>
+        <p>Your love, laughter, and company on our wedding day are the best gifts we could ever hope to receive!</p>
+        <p>However, should you wish to honour us with a present we have made a small registry and will have a wishing well at the reception where we can receive your best wishes.</p> 
+        <a href="http://www.myer.com.au/webapp/wcs/stores/servlet/RegistryDetailsView?storeId=10251&catalogId=10051&langId=-1&externalId=410542" class="btn btn-default btn-lg" style="margin-bottom: 1em;">See the registry</a>
+      </div>
+    </div>
     </section>
 
     <section id="rsvp" class="content-section text-center">
-        <div class="rsvp-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>RSVP</h2>
-                    <p>To RSVP please enter the code from your invite below and indicate who will be comming.</p>
-                    <%= form_tag("/rsvp", method: "get") do %>
-                        <%= text_field_tag :q, "" , class: "txt-glow", placeholder: "Code" %>
-                        <%= submit_tag "Enter", class: "btn btn-invert" %>
-                    <% end %>
-                    <br>
-                    <p>Alternatively you can call or SMS Sal on 0422 257 630.</p>
-                    <br><br><br><br>
-                </div>
-            </div>
+    <div class="rsvp-section">
+      <div class="container">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h2>RSVP</h2>
+          <p>To RSVP please enter the code from your invite below and indicate who will be comming.</p>
+          <%= form_tag("/rsvp", method: "get") do %>
+            <%= text_field_tag :q, "" , class: "txt-glow", placeholder: "Code" %>
+            <%= submit_tag "Enter", class: "btn btn-invert" %>
+          <% end %>
+          <br>
+          <p>Alternatively you can call or SMS Sal on 0422 257 630.</p>
+          <br><br><br><br>
         </div>
+      </div>
+    </div>
     </section>

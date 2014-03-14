@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   def home
+    @notice = params[:notice]
   end
 
   def where

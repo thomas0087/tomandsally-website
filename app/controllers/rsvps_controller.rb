@@ -11,7 +11,7 @@ class RsvpsController < ApplicationController
     puts @rsvp
 
     if @rsvp.update_attributes(params[:rsvp])
-      redirect_to root_path, notice: "Thank you for your RSVP"
+      redirect_to controller: "pages", action: "home", notice: "Thanks"
     end
   end
 
