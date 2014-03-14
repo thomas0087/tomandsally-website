@@ -29,7 +29,7 @@ class RsvpsController < ApplicationController
     end
 
     # coming, not coming, not responded, total
-    @totals = [Invitee.where(comming: true).size, Invitee.where(comming: false).size, @notResponded.size, Invitee.count]
+    @totals = [Invitee.where(coming: true).size, Invitee.where(coming: false).size, @notResponded.size, Invitee.count]
 
   end
 end

@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(:version => 20140211211203) do
   create_table "invitees", :force => true do |t|
     t.integer  "rsvp_id"
     t.string   "name"
-    t.boolean  "comming"
+    t.boolean  "coming"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -26,9 +26,9 @@ ActiveRecord::Schema.define(:version => 20140211211203) do
   create_table "rsvps", :force => true do |t|
     t.string   "code"
     t.string   "comments"
-    t.boolean  "responded"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.boolean  "responded",  :default => false
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
   end
 
 end

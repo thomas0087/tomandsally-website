@@ -3,7 +3,7 @@ class CreateInvitees < ActiveRecord::Migration
     create_table :invitees do |t|
       t.references :rsvp
       t.string :name
-      t.boolean :comming
+      t.boolean :coming
 
       t.timestamps
     end

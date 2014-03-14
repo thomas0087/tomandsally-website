@@ -23,6 +23,6 @@ class Rsvp < ActiveRecord::Base
   end
 
   def getInvitees coming
-    self.invitee.map { |i| (i.comming == coming ? [i.name, i.updated_at] : nil) }.compact
+    self.invitee.map { |i| (i.coming == coming ? [i.name, i.updated_at] : nil) }.compact
   end
 end
