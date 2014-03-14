@@ -120,3 +120,25 @@
     content: "\2714";
     font-size: 12px;
 }
+
+/* Fieldset stuff */
+fieldset.default {
+    border-width: 6px;
+    padding: 6px 6px 6px 6px;
+    margin: 0px 0px 6px 0px;
+}
+fieldset.parent {
+    padding: 0px;
+}
+fieldset.child {
+    border: 1px dashed #ddd;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    border-radius: 1em;
+}
+
+div.rsvp_index {
+  color: #222;
+  background-color: #AA6;
+}
+

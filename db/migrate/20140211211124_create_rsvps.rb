@@ -3,7 +3,7 @@ class CreateRsvps < ActiveRecord::Migration
     create_table :rsvps do |t|
       t.string :code
       t.string :comments
-      t.boolean :responded
+      t.boolean :responded, default: false
 
       t.timestamps
     end

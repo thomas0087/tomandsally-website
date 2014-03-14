@@ -5,7 +5,7 @@
 #  id         :integer          not null, primary key
 #  code       :string(255)
 #  comments   :string(255)
-#  responded  :boolean
+#  responded  :boolean          default(FALSE)
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
@@ -17,4 +17,12 @@ class Rsvp < ActiveRecord::Base
   has_many :invitee, dependent: :destroy
 
   accepts_nested_attributes_for :invitee
+
+  def getNamesForRsvp
+    self.invitee.map { |i| i.name }
+  end
+
+  def getInvitees coming
+    self.invitee.map { |i| (i.comming == coming ? [i.name, i.updated_at] : nil) }.compact
+  end
 end

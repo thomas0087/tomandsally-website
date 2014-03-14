@@ -1,4 +1,84 @@
-<h1>Secret, shhhhh!</h1>
-<%= @rsvps.inspect %>
+<div class="rsvp_index">
+<h1>THIS IS A SECRET, shhhhh!</h1>
 <br><br>
-<%= @invitees.inspect %>
+<fieldset class="default child">
+<p>Totals</p>
+<table class="table table-bordered table-condensed">
+  <tr>
+    <th>Coming</th>
+    <th>Not Coming</th>
+    <th>Not Responded</th>
+    <th>Total</th>
+  </tr>
+  <tr>
+    <td><%= @totals[0] %></td>
+    <td><%= @totals[1] %></td>
+    <td><%= @totals[2] %></td>
+    <td><%= @totals[3] %></td>
+  </tr>
+</table>
+</fieldset>
+<br><br>
+<fieldset class="default child">
+<p>Comments</p>
+<table class="table table-bordered table-striped table-hover table-condensed">
+  <tr>
+    <th>Names</th>
+    <th>Comments</th>
+  </tr>
+  <% @comments.each do |c| %>
+    <tr>
+      <td><%= c[0].join(',') %></td>
+      <td><%= c[1] %></td>
+    </tr>
+  <% end %>
+</table>
+</fieldset>
+<br><br>
+<fieldset class="default child">
+<p>Coming</p>
+<table class="table table-bordered table-striped table-hover table-condensed">
+  <tr>
+    <th>Name</th>
+    <th>Time</th>
+  </tr>
+  <% @coming[0].each do |c| %>
+    <tr>
+      <td><%= c[0] %></td>
+      <td><%= c[1] %></td>
+    </tr>
+  <% end %>
+</table>
+</fieldset>
+<br><br>
+<fieldset class="default child">
+<p>Not Coming</p>
+<table class="table table-bordered table-striped table-hover table-condensed">
+  <tr>
+    <th>Name</th>
+    <th>Time</th>
+  </tr>
+  <% @notComing[0].each do |c| %>
+    <tr>
+      <td><%= c[0] %></td>
+      <td><%= c[1] %></td>
+    </tr>
+  <% end %>
+</table>
+</fieldset>
+<br><br>
+<fieldset class="default child">
+<p>Not Responded</p>
+<table class="table table-bordered table-striped table-hover table-condensed">
+  <tr>
+    <th>Name</th>
+  </tr>
+  <% @notResponded.each do |c| %>
+    <tr>
+      <td><%= c %></td>
+    </tr>
+  <% end %>
+</table>
+</fieldset>
+<br><br>
+</div>
