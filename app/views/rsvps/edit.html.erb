@@ -4,12 +4,12 @@
 <% unless @rsvp.blank? %>
   <%= nested_form_for @rsvp, url: {action: :update}, html: {class: "form"} do |f| %>
     <%= f.hidden_field :id %>
-    Which invitees will be comming?
-    <div>
+    <p>Please check the box if you can't wait to celebrate with us or leave it unchecked if you're sad to miss all the fun.</p>
+    <div class="css3-checkboxes">
       <%= f.fields_for :invitee, :wrapper => false do |i_f| %>
         <%= i_f.hidden_field :id %>
-        <%= i_f.check_box :comming, {} %>
-        <%= i_f.label :comming, i_f.object.name %><br>
+        <label><%= i_f.check_box :comming, {} %>
+        <span><%= i_f.label :comming, i_f.object.name %></span></label><br>
       <% end %>
     </div>
     <br>
