@@ -25,4 +25,17 @@ class Rsvp < ActiveRecord::Base
   def getInvitees coming
     self.invitee.map { |i| (i.coming == coming ? [i.name, i.updated_at] : nil) }.compact
   end
+
+  def self.add csvUrl
+    require 'csv'
+    require 'open-uri'
+    CSV.parse(open(csvUrl), :headers => true) do |row|
+      r = Rsvp.create!(code: row['code'], comments: (row['comments'].blank? ? nil : row['comments']))
+      row.each do |column, data|
+        if column == 'name'
+          r.invitee << Invitee.create!(name: data) unless data.blank?
+        end
+      end
+    end
+  end
 end
