@@ -19,13 +19,13 @@ class RsvpsController < ApplicationController
     @notComing = []
     Rsvp.where(responded: true).each do |r|
       @comments.append([r.getNamesForRsvp, r.comments]) unless r.comments.blank?
-      @coming.append(r.getInvitees(true))
-      @notComing.append(r.getInvitees(false))
+      @coming += r.getInvitees(true)
+      @notComing += r.getInvitees(false)
     end
 
     @notResponded = []
     Rsvp.where(responded: false).each do |r|
-      @notResponded += r.invitee.map { |i| i.name }
+      @notResponded += r.invitee.map { |i| [i.name, r.code] }
     end
 
     # coming, not coming, not responded, total
