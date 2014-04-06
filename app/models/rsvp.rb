@@ -30,7 +30,7 @@ class Rsvp < ActiveRecord::Base
     require 'csv'
     require 'open-uri'
     CSV.parse(open(csvUrl), :headers => true) do |row|
-      r = Rsvp.create!(code: row['code'], comments: (row['comments'].blank? ? nil : row['comments']))
+      r = Rsvp.create!(code: row['code'], comments: (row['comments'].blank? ? nil : row['comments']), responded: false)
       row.each do |column, data|
         if column == 'name'
           r.invitee << Invitee.create!(name: data) unless data.blank?
