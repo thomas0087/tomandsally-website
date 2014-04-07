@@ -2,6 +2,11 @@ class RsvpsController < ApplicationController
   def edit
     puts params
     @rsvp = Rsvp.where(code: params[:q]).first
+    @rsvp.invitee.each do |i| 
+      if i.coming.blank?
+        i.coming = true
+      end
+    end
   end
 
   def update
